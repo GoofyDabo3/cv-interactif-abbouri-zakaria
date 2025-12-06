@@ -1,0 +1,133 @@
+<!-- Dark Futuristic Neon CV -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zakaria Abbouri - CV</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top px-4">
+    <a class="navbar-brand accent neon" href="#home">Zakaria Abbouri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#certs">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#lang">Langages</a></li>
+        <li class="nav-item d-flex align-items-center gap-3">
+          <a class="nav-link text-white" href="mailto:abbouri33@gmail.com"><i class="fa-solid fa-envelope accent"></i></a>
+          <a class="nav-link text-white" href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram accent"></i></a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home" class="text-center" style="padding:140px 20px;">
+    <div class="photo-glow">
+        <img src="pfp.jpg" width="160" height="160" alt="Profile Photo" />
+    </div>
+
+    <h1 class="neon">I'm Zakaria Abbouri</h1>
+    <h3 class="accent"><span id="typed"></span></h3>
+    
+  </section>
+
+  <div class="container">
+    <section id="about" class="dark-section" data-aos="fade-up">
+      <h2 class="accent neon">About Me</h2>
+      <p>Actuellement en deuxième année d’informatique à l’Université FSSM, je me spécialise dans le développement de jeux vidéo. Je dispose de bases solides en mathématiques, en physique, en génie logiciel et en technologies web. Mon ambition est de concevoir des expériences numériques interactives, innovantes et immersives.</p>
+    </section>
+
+    <section id="skills" class="dark-section" data-aos="fade-left">
+      <h2 class="accent neon">Skills</h2>
+
+      <h5 class="mt-3">Technical</h5>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, C, Flask, Bootstrap</li>
+        <li>SQLite3</li>
+        <li>VSCode, Git, GitHub</li>
+      </ul>
+
+      <h5 class="mt-3">Soft Skills</h5>
+      <ul>
+        <li>Travail en équipe</li>
+        <li>Communication</li>
+        <li>Adaptabilité</li>
+      </ul>
+    </section>
+
+    <section id="education" class="dark-section" data-aos="fade-right">
+      <h2 class="accent neon">Education</h2>
+      <p>Deuxième année en Informatique</p>
+      <p>Bacalaureat en Sciences physiques</p>
+    </section>
+
+    <section id="certs" class="dark-section" data-aos="fade-up">
+      <h2 class="accent neon">Certifications</h2>
+      <ul>
+        <li>CS50x - Harvard (2024)</li>
+        <li>freeCodeCamp Interactive Web Design (2024)</li>
+      </ul>
+    </section>
+
+    <section id="lang" class="dark-section" data-aos="zoom-in">
+      <h2 class="accent neon">Langages</h2>
+
+      <div class="mb-3">
+        <span>Arabe - Native</span>
+        <div class="progress" style="height: 20px; background:#111; border-radius: 8px;">
+          <div class="progress-bar" role="progressbar" style="width: 100%; background:#8b5bff; box-shadow:0 0 10px #8b5bff;" data-aos="fill-up" data-aos-duration="1200"></div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <span>Anglais - C1</span>
+        <div class="progress" style="height: 20px; background:#111; border-radius: 8px;">
+          <div class="progress-bar" role="progressbar" style="width: 90%; background:#00ffd5; box-shadow:0 0 10px #00ffd5;" data-aos="fill-up" data-aos-duration="1200"></div>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <span>Francais - B2</span>
+        <div class="progress" style="height: 20px; background:#111; border-radius: 8px;">
+          <div class="progress-bar" role="progressbar" style="width: 75%; background:#ff3c9e; box-shadow:0 0 10px #ff3c9e;" data-aos="fill-up" data-aos-duration="1200"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="text-center py-4">© 2025 Zakaria Abbouri</footer>
+  <script>
+    
+      AOS.init();
+
+      var typed = new Typed("#typed", {
+        strings: ["Future Game Developer.", "Physics Mind. Code Crafter.", "Building Interactive Worlds."],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true
+      });
+  </script>
+  
+</body>
+</html>

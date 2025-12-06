@@ -1,0 +1,68 @@
+body {
+      background: #1a1a1a;
+      color: white;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .accent {
+      color: #8b5bff;
+    }
+
+    .neon {
+      text-shadow: 0 0 8px #8b5bff;
+    }
+
+    .navbar {
+      background: #111;
+      border-bottom: 2px solid #8b5bff;
+    }
+    .photo-glow {
+      position: relative;
+      display: inline-block;
+    }
+
+    .photo-glow img {
+    border-radius: 50%;
+    box-shadow:
+        0 0 25px rgba(139, 91, 255, 0.8),
+        0 0 60px rgba(139, 91, 255, 0.5),
+        0 0 90px rgba(139, 91, 255, 0.3);
+    transition: 0.4s ease-in-out;
+    }
+
+    .photo-glow:hover img {
+    box-shadow:
+        0 0 45px rgba(139, 91, 255, 1),
+        0 0 90px rgba(139, 91, 255, 0.8),
+        0 0 140px rgba(139, 91, 255, 0.6);
+    }
+
+
+    .dark-section {
+      background: #222;
+      padding: 60px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+
+    .hover-glow:hover {
+      filter: drop-shadow(0 0 8px #8b5bff);
+      transition: 0.3s;
+    }
+
+    .progress-bar {
+      background-color: #8b5bff;
+    }
+
+    #themeToggle {
+      cursor: pointer;
+    }
+
+    /* Light Mode */
+    
+
+    .light-mode .navbar {
+      background: white !important;
+      border-bottom: 2px solid #8b5bff !important;
+    }
