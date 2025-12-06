@@ -55,14 +55,3 @@ body {
       background-color: #8b5bff;
     }
 
-    #themeToggle {
-      cursor: pointer;
-    }
-
-    /* Light Mode */
-    
-
-    .light-mode .navbar {
-      background: white !important;
-      border-bottom: 2px solid #8b5bff !important;
-    }
